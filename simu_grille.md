@@ -2,9 +2,9 @@
 
 Écrit par `simu_grille.py`. Règles, jugement et prévision dans l'en-tête du script, écrits avant le premier relevé. Aucun ordre réel.
 
-Début : 13/11/2026 17:10 UTC. Dernier relevé : 13/11/2026 17:18 UTC. Durée : 0,01 jours. Passages : 15. Carnet relevé 100 % du temps, 0 trous de plus de 10 minutes.
+Début : 13/11/2026 17:10 UTC. Dernier relevé : 13/11/2026 17:20 UTC. Durée : 0,01 jours. Passages : 19. Carnet relevé 100 % du temps, 0 trous de plus de 10 minutes.
 
-Transactions vues sur le marché : 14, pour 805 USDG. Prix de départ 1,0001, dernier prix 1,0001.
+Transactions vues sur le marché : 18, pour 1036 USDG. Prix de départ 1,0001, dernier prix 1,0001.
 
 | Compte | Gain depuis le début | Gain pour 200 USDC | Rythme annuel | Ordres servis | Allers-retours gagnants |
 |---|---|---|---|---|---|
