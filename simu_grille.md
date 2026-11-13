@@ -2,23 +2,23 @@
 
 Écrit par `simu_grille.py`. Règles, jugement et prévision dans l'en-tête du script, écrits avant le premier relevé. Aucun ordre réel.
 
-Début : 13/11/2026 17:10 UTC. Dernier relevé : 13/11/2026 17:20 UTC. Durée : 0,01 jours. Passages : 19. Carnet relevé 100 % du temps, 0 trous de plus de 10 minutes.
+Début : 13/11/2026 17:10 UTC. Dernier relevé : 13/11/2026 20:26 UTC. Durée : 0,14 jours. Passages : 386. Carnet relevé 100 % du temps, 0 trous de plus de 10 minutes.
 
-Transactions vues sur le marché : 18, pour 1036 USDG. Prix de départ 1,0001, dernier prix 1,0001.
+Transactions vues sur le marché : 404, pour 7701140 USDG. Prix de départ 1,0001, dernier prix 1,0000.
 
 | Compte | Gain depuis le début | Gain pour 200 USDC | Rythme annuel | Ordres servis | Allers-retours gagnants |
 |---|---|---|---|---|---|
-| tête de file | -0,0100 % | -0,020 USDC | trop tôt | 0 | 0 |
-| file du carnet | -0,0100 % | -0,020 USDC | trop tôt | 0 | 0 |
-| traversée | -0,0100 % | -0,020 USDC | trop tôt | 0 | 0 |
+| tête de file | -0,0120 % | -0,024 USDC | trop tôt | 7 | 3 |
+| file du carnet | -0,0140 % | -0,028 USDC | trop tôt | 2 | 1 |
+| traversée | -0,0150 % | -0,030 USDC | trop tôt | 0 | 0 |
 
 Le gain compte les lots encore ouverts à leur prix du jour et le coût de départ (0,02 % de la moitié achetée au marché, soit 0,020 USDC), que les trois comptes paient une fois.
 
 Rythme annuel : gain depuis le début, ramené à un an sans intérêts composés. Il ne s'affiche qu'après 7 jours : avant, le coût de départ pèse trop.
 
-Repères : Livret A 1,70 % par an. Garder moitié USDG, moitié USDC sans rien faire : -0,0100 % depuis le début.
+Repères : Livret A 1,70 % par an. Garder moitié USDG, moitié USDC sans rien faire : -0,0150 % depuis le début.
 
-File d'attente moyenne devant un ordre au moment où il est posé (compte « file du carnet ») : 210026 USDG, sur 10 ordres posés. Pire quantité vue : 80443 à l'achat, 1072492 à la vente.
+File d'attente moyenne devant un ordre au moment où il est posé (compte « file du carnet ») : 261420 USDG, sur 12 ordres posés. Pire quantité vue : 757251 à l'achat, 1072492 à la vente.
 
 ## Jugement
 
