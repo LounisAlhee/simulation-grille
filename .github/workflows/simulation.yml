@@ -1,0 +1,34 @@
+# Simulation sans argent d'une grille sur USDG/USDC (Kraken). Aucun ordre, aucune clé, aucun secret.
+# Toutes les 6 heures, une machine fait tourner la boucle pendant 5 h 40, puis enregistre l'état par un commit.
+name: Simulation de la grille
+
+on:
+  schedule:
+    - cron: "7 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: simulation
+  cancel-in-progress: false
+
+jobs:
+  simulation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controle du moteur
+        run: python3 simu_grille.py controle
+      - name: Simulation pendant 5 h 40
+        run: python3 simu_grille.py --boucle 30 --duree 20400
+      - name: Enregistrer l'etat
+        if: always()
+        run: |
+          git config user.name "simulation"
+          git config user.email "simulation@users.noreply.github.com"
+          git add donnees/simu_grille simu_grille.md
+          git diff --cached --quiet || git commit -m "Releves de la simulation"
+          git push
